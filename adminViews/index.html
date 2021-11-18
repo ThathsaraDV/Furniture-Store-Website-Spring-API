@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=2 minimum-scale=1">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/style/adminMainStyle.css">
+    <link rel="stylesheet" href="assets/style/adminItemsStyle.css">
+    <link rel="stylesheet" href="assets/style/adminProductStyle.css">
+    <link rel="stylesheet" href="assets/style/adminCategoryStyle.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+<section id="body">
+
+    <div id="headerBig">
+
+        <div id="header1">
+            <div id="headerName">
+                <div id="headerNameDiv">
+                    <h1 id="headerNameH1">ABC</h1>
+                </div>
+            </div>
+            <section id="headerNav">
+                <section id="headerNavContainer">
+
+                </section>
+            </section>
+        </div>
+
+        <div id="header2">
+            <section id="header2NavContainer">
+                <div class="nav2Div dropdown">
+                    <a class="nav2DivText">PRODUCTS</a>
+                    <div class="dropdown-content" id="adminProductNav">
+                    </div>
+                </div>
+                <div class="nav2Div" id="manageProductNav"><a class="nav2DivText">MANAGE PRODUCTS</a></div>
+                <div class="nav2Div" id="manageCategoryNav"><a class="nav2DivText">MANAGE CATEGORY</a></div>
+            </section>
+        </div>
+
+    </div>
+
+    <div id="itemsContent">
+        <div id="itemsContainer">
+
+            <div id="itemsOuter">
+                <div id="outer1">
+                    <div class="input-group" style="width: 20%;">
+                        <input type="text" class="form-control" placeholder="Search" style="height: 37px;">
+                        <div class="input-group-append"
+                             style="background-color: #fff; border: 1px solid #ced4da; border-top-right-radius: .25rem; border-bottom-right-radius: .25rem;">
+                            <button class="btn"
+                                    style="height: 35px; padding: 4px; display: flex; justify-content: center; align-items: center; background-color: #fff;"
+                                    type="button">
+                                <img src="assets/img/icons8-search-24.png">
+                            </button>
+                        </div>
+                    </div>
+                    <!--<div id="resultNumber">
+                        <p id="resultNumberText">Showing 1-10 of 24 results</p>
+                    </div>-->
+                </div>
+                <div id="outer2">
+                    <div id="outer2Wrapper">
+
+                        <div id="row1">
+                            <!--<div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/Emerson-Bed.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Emerson Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(NBEM 003 / 78" x 60")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 97,175</p>
+                                </div>
+                            </div>-->
+                            <!--<div class="bedBox" id="chelseaBed">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/Chester.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Chelsea Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(SBCE7872/ 78" x 72")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 101,775</p>
+                                </div>
+                            </div>
+                            <div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/Kylee-1.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Kylee Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(SBKY8472 / 84" x 72")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 88,900</p>
+                                </div>
+                            </div>
+
+                            <div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/esmerelda-with-new-bedsheet.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Canterbury Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(SBCA7872 / 78" x 72")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 100,900</p>
+                                </div>
+                            </div>
+                            <div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/Feori.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Feori Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(KBFE 003 / 78" x 60")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 62,575</p>
+                                </div>
+                            </div>
+                            <div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/Monarch-Bed-1.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Monarch Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(KBM 003 / 78" x 60")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 63,875</p>
+                                </div>
+                            </div>
+
+                            <div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/winchester-bed-1.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Winchester Queen Size Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(KBW 007 / 78" x 60")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 95,875</p>
+                                </div>
+                            </div>
+                            <div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/yelena-bed.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Yelena Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(KBY 003 / 78" x 60")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 54,275</p>
+                                </div>
+                            </div>
+                            <div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/bed.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Queenston Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(KBQ 003/ 78" x 60")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 58,575</p>
+                                </div>
+                            </div>
+
+                            <div class="bedBox">
+                                <div class="bedBoxImg">
+                                    <img style="width: 100%; height: 100%; background-size: cover;" src="assets/img/beds/Ivory.jpg">
+                                </div>
+                                <div class="bedBoxText">
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;">Ivory Bed</p>
+                                    <p style="width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;">(NBIV 004/ 78" x 72")</p>
+                                    <p style="width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;">Rs. 209,975</p>
+                                </div>
+                            </div>-->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="productContent">
+        <div id="productContainer">
+            <div id="productOuter">
+                <div class="container-fluid row overflow-hidden">
+
+                    <div class="col-md-3 d-flex flex-column justify-content-center">
+
+                        <div class="col-md-12 mt-4 justify-content-center" style=" border-radius: 0.5rem; " id="saveBtnWrapper">
+                            <div class="w-50" style="margin: 1rem">
+                                <button type="button" class="btn w-100 btnHover1" style="border-radius: 0.5rem; border: 2px #0C0C1E solid;" id="btnSaveProduct">Save
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mt-4 justify-content-center" style="border-radius: 0.5rem;" id="updateBtnWrapper">
+                            <div class="w-50" style="margin: 1rem">
+                                <button type="button" class="btn btnHover1 w-100" style="border-radius: 0.5rem; border: 2px #0C0C1E solid;" id="btnUpdateProduct">Update
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mt-4 justify-content-center" style="border-radius: 0.5rem;" id="deleteBtnWrapper">
+                            <div class="w-50" style="margin: 1rem">
+                                <button type="button" class="btn btnHover1 w-100" style="border-radius: 0.5rem; border: 2px #0C0C1E solid;" id="btnDeleteProduct">Delete
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-9 d-flex flex-column" id="regProductRow1" style="height: 100%; overflow-y: auto; ">
+
+                        <div class="col-md-12 d-flex flex-row justify-content-evenly" style="margin-bottom: 12px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+                            <div style="width: 25%; text-align: center; cursor: pointer" id="productSave">
+                                <p style="margin-top: 1rem">SAVE</p>
+                            </div>
+                            <div style="width: 25%; text-align: center; cursor: pointer" id="productUpdate">
+                                <p style="margin-top: 1rem">UPDATE</p>
+                            </div>
+                            <div style="width: 25%; text-align: center; cursor: pointer" id="productDelete">
+                                <p style="margin-top: 1rem">DELETE</p>
+                            </div>
+                        </div>
+
+                        <form class="row g-3 w-100" id="saveForm" style="float: none; margin: 0 auto; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+
+                            <div class="col-md-3">
+                                <label for="saveProductID" class="form-label">Product ID</label>
+                                <input type="text" class="form-control" id="saveProductID">
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="saveProductName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="saveProductName">
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="saveProductCode" class="form-label">Code</label>
+                                <input type="text" class="form-control" id="saveProductCode">
+                            </div>
+                            <div class="col-md-1"></div>
+
+
+                            <div class="col-md-3">
+                                <label for="saveProductPrice" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="saveProductPrice">
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="saveProductCategory" class="form-label">Category</label>
+                                <select class="form-select" id="saveProductCategory" >
+                                    <option value="" selected disabled>Select Category</option>
+                                    <option value="C001">Beds</option>
+                                    <option value="4">Tables</option>
+                                    <option value="5">Chairs</option>
+                                    <option value="6">Sofas</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-4"></div>
+
+
+                            <div class="col-md-5">
+                                <label for="saveProductDesc" class="form-label">Description</label>
+                                <textarea type="text" rows="5" class="form-control" id="saveProductDesc"></textarea>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="saveProductSpec" class="form-label">Specifications</label>
+                                <textarea type="text" rows="5" class="form-control" id="saveProductSpec"></textarea>
+                                <small class="form-text text-muted">Example: spec$price_spec$price_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="saveProductDimensions" class="form-label">Dimensions</label>
+                                <textarea type="text" rows="5" class="form-control"
+                                          id="saveProductDimensions"></textarea>
+                                <small class="form-text text-muted">Example: dimension_dimension_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="saveProductWarranty" class="form-label">Warranty</label>
+                                <textarea type="text" rows="5" class="form-control" id="saveProductWarranty"></textarea>
+                                <small class="form-text text-muted">Example: warranty_warranty_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+
+                            <div class="col-md-12 mt-3 mb-3">
+                                <div class="row">
+                                    <p class="h6 w-auto" style="float: none; margin: 0 auto;">Images of the Product</p>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col w-25">
+                                        <label for="saveProductImgMain" class="form-label">Main Image</label>
+                                        <input type="file" class="form-control" id="saveProductImgMain">
+                                    </div>
+                                    <div class="col w-25">
+                                        <label for="saveProductImg2" class="form-label">Second Image</label>
+                                        <input type="file" class="form-control" id="saveProductImg2">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col w-25">
+                                        <label for="saveProductImg3" class="form-label">Third Image</label>
+                                        <input type="file" class="form-control" id="saveProductImg3">
+                                    </div>
+                                    <div class="col w-25">
+                                        <label for="saveProductImg4" class="form-label">Fourth Image</label>
+                                        <input type="file" class="form-control" id="saveProductImg4">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <form class="row g-3 w-100" id="updateForm" style="float: none; margin: 0 auto; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+
+                            <div class="col-md-3">
+                                <label for="regProductID" class="form-label">Product ID</label>
+                                <input type="text" class="form-control" id="regProductID" readonly>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="regProductName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="regProductName">
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="regProductCode" class="form-label">Code</label>
+                                <input type="text" class="form-control" id="regProductCode">
+                            </div>
+                            <div class="col-md-1"></div>
+
+
+                            <div class="col-md-3">
+                                <label for="regProductPrice" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="regProductPrice">
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="regProductCategory" class="form-label">Category</label>
+                                <input type="text" class="form-control" id="regProductCategory" readonly>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-4"></div>
+
+
+                            <div class="col-md-5">
+                                <label for="regProductDesc" class="form-label">Description</label>
+                                <textarea type="text" rows="5" class="form-control" id="regProductDesc"></textarea>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="regProductSpec" class="form-label">Specifications</label>
+                                <textarea type="text" rows="5" class="form-control" id="regProductSpec"></textarea>
+                                <small class="form-text text-muted">Example: spec$price_spec$price_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="regProductDimensions" class="form-label">Dimensions</label>
+                                <textarea type="text" rows="5" class="form-control"
+                                          id="regProductDimensions"></textarea>
+                                <small class="form-text text-muted">Example: dimension_dimension_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="regProductWarranty" class="form-label">Warranty</label>
+                                <textarea type="text" rows="5" class="form-control" id="regProductWarranty"></textarea>
+                                <small class="form-text text-muted">Example: warranty_warranty_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+
+                            <div class="col-md-12 mt-3 mb-3">
+                                <div class="row">
+                                    <p class="h6 w-auto" style="float: none; margin: 0 auto;">Images of the Product</p>
+                                </div>
+
+                                <div class="col-md-12 d-flex mt-4 flex-row justify-content-center" id="productImgContainer">
+                                    <!--<div class="col-md-2 d-flex flex-column align-items-center mx-3">
+                                        <div>
+                                            <img src="assets/img/Felicia.jpg" style="width: 125px; height: 100px;" >
+                                        </div>
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="img1ImgCurrent">
+                                            <label class="form-check-label" for="img1ImgCurrent">
+                                                Keep Current Image
+                                            </label>
+                                        </div>
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="img1ImgRemove">
+                                            <label class="form-check-label" for="img1ImgRemove">
+                                                Remove This Image
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <div>
+                                            <img src="assets/img/Felicia.jpg" style="width: 125px; height: 100px;" >
+                                        </div>
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="mainImgCurrent">
+                                            <label class="form-check-label" for="mainImgCurrent">
+                                                Keep Current Image
+                                            </label>
+                                        </div>
+                                    </div>-->
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col w-25">
+                                        <label for="regProductImgMain" class="form-label">Main Image</label>
+                                        <input type="file" class="form-control" id="regProductImgMain">
+                                    </div>
+                                    <div class="col w-25">
+                                        <label for="regProductImg2" class="form-label">Second Image</label>
+                                        <input type="file" class="form-control" id="regProductImg2">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col w-25">
+                                        <label for="regProductImg3" class="form-label">Third Image</label>
+                                        <input type="file" class="form-control" id="regProductImg3">
+                                    </div>
+                                    <div class="col w-25">
+                                        <label for="regProductImg4" class="form-label">Fourth Image</label>
+                                        <input type="file" class="form-control" id="regProductImg4">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <form class="row g-3 w-100" id="deleteForm" style="float: none; margin: 0 auto; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+
+                            <div class="col-md-3">
+                                <label for="deleteProductID" class="form-label">Product ID</label>
+                                <input type="text" class="form-control" id="deleteProductID">
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="deleteProductName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="deleteProductName">
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="deleteProductCode" class="form-label">Code</label>
+                                <input type="text" class="form-control" id="deleteProductCode">
+                            </div>
+                            <div class="col-md-1"></div>
+
+
+                            <div class="col-md-3">
+                                <label for="deleteProductPrice" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="deleteProductPrice">
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3">
+                                <label for="deleteProductCategory" class="form-label">Category</label>
+                                <input type="text" class="form-control" id="deleteProductCategory" readonly>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-4"></div>
+
+
+                            <div class="col-md-5">
+                                <label for="deleteProductDesc" class="form-label">Description</label>
+                                <textarea type="text" rows="5" class="form-control" id="deleteProductDesc"></textarea>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="deleteProductSpec" class="form-label">Specifications</label>
+                                <textarea type="text" rows="5" class="form-control" id="deleteProductSpec"></textarea>
+                                <small class="form-text text-muted">Example: spec$price_spec$price_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="deleteProductDimensions" class="form-label">Dimensions</label>
+                                <textarea type="text" rows="5" class="form-control"
+                                          id="deleteProductDimensions"></textarea>
+                                <small class="form-text text-muted">Example: dimension_dimension_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-5">
+                                <label for="deleteProductWarranty" class="form-label">Warranty</label>
+                                <textarea type="text" rows="5" class="form-control" id="deleteProductWarranty"></textarea>
+                                <small class="form-text text-muted">Example: warranty_warranty_</small>
+                            </div>
+                            <div class="col-md-1"></div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="categoryContent">
+        <div id="categoryContainer">
+            <div id="categoryOuter">
+                <div class="col-md-8 d-flex flex-row flex-wrap justify-content-evenly overflow-auto" id="categoryList" style="height: 25%; padding: 1rem; box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+
+                </div>
+
+                <div class="col-md-8 d-flex flex-column align-items-center mt-3" style="height: 70%;">
+                    <div class="col-md-8 d-flex flex-row justify-content-evenly" style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+                        <div class="d-flex justify-content-center align-items-center" style="width: 175px; height: 45px; cursor: pointer;" id="saveCategoryNav">
+                            <p style="margin: 1rem;">SAVE</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 175px; height: 45px; cursor: pointer;" id="updateCategoryNav">
+                            <p style="margin: 1rem;">UPDATE</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 175px; height: 45px; cursor: pointer;" id="deleteCategoryNav">
+                            <p style="margin: 1rem;">DELETE</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-9 flex-column justify-content-center align-items-center mt-3" style="height: 80%; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; border-radius: 0.5rem;" id="categorySaveContent">
+                        <div class="col-md-12 d-flex flex-row align-items-center justify-content-evenly" style="height: 80%;">
+                            <div class="col-md-3">
+                                <label for="saveCategoryID" class="form-label">Category ID</label>
+                                <input type="text" class="form-control" id="saveCategoryID">
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="saveCategoryName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="saveCategoryName">
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 d-flex flex-row align-items-center justify-content-center" style="height: 20%;">
+                            <div class="w-25">
+                                <button type="button" class="btn w-100 btnHover1" style="border-radius: 0.5rem; border: 2px #0C0C1E solid;" id="btnSaveCategory">Save</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 flex-column justify-content-center align-items-center mt-3" style="height: 80%; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; border-radius: 0.5rem;" id="categoryUpdateContent">
+                        <div class="col-md-12 d-flex flex-row align-items-center justify-content-evenly" style="height: 80%;">
+                            <div class="col-md-3">
+                                <label for="updateCategoryID" class="form-label">Category ID</label>
+                                <input type="text" class="form-control" id="updateCategoryID" readonly>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="updateCategoryName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="updateCategoryName">
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 d-flex flex-row align-items-center justify-content-center" style="height: 20%;">
+                            <div class="w-25">
+                                <button type="button" class="btn btnHover1 w-100" style="border-radius: 0.5rem; border: 2px #0C0C1E solid;" id="btnUpdateCategory">Update</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 flex-column justify-content-center align-items-center mt-3" style="height: 80%; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; border-radius: 0.5rem;" id="categoryDeleteContent">
+                        <div class="col-md-12 d-flex flex-row align-items-center justify-content-evenly" style="height: 80%;">
+                            <div class="col-md-3">
+                                <label for="deleteCategoryID" class="form-label">Category ID</label>
+                                <input type="text" class="form-control" id="deleteCategoryID" readonly>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="deleteCategoryName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="deleteCategoryName">
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 d-flex flex-row align-items-center justify-content-center" style="height: 20%;">
+                            <div class="w-25">
+                                <button type="button" class="btn btnHover1 w-100" style="border-radius: 0.5rem; border: 2px #0C0C1E solid;" id="btnDeleteCategory">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</section>
+
+<script src="assets/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+
+    let items = document.getElementById("itemsContent");
+    let product = document.getElementById("productContent");
+    let category = document.getElementById("categoryContent");
+
+    product.style.display = "none";
+    category.style.display = "none";
+
+    $(document).ready(function () {
+
+        let adminId = sessionStorage.getItem("adminID");
+        let adminName = sessionStorage.getItem("adminName");
+
+        let adminCard = "<div class=\"d-flex flex-column col-md-2 align-items-center\" style=\"border-radius: 0.5rem; padding: 6px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\">\n" +
+            "                        <p style=\"color: #1B2E3C; margin: 0\">"+adminName+"</p>\n" +
+            "                        <p style=\"color: #1B2E3C; margin: 0\">"+adminId+"</p>\n" +
+            "                    </div>";
+
+        let logout = "<div class=\"col-md-2\">\n" +
+            "                    <button type=\"button\" class=\"btn btnHover1\" style=\"background-color: #6a1a21; width: 100%; border-radius: 0.5rem; /*border: 2px #F7F8F8 solid;*/\" id=\"btnLogout\">Logout</button>\n" +
+            "                </div>";
+
+        $("#headerNavContainer").empty();
+        $("#headerNavContainer").append(adminCard);
+
+        $.ajax({
+            method: "GET",
+            url: "http://localhost:8080/abc/product",
+            contentType: 'application/json',
+            async: true,
+            data: {
+                "id": "C001"
+            },
+
+            success: function (data) {
+
+                $("#row1").empty();
+
+                for (let i = 0; i <= data.data.length; i++) {
+
+                    let product = data.data[i];
+
+                    let box = "<div class=\"itemsBox\" id=\"" + product.productID + "\">\n" +
+                        "                                    <div class=\"itemsBoxImg\">\n" +
+                        "                                        <img style=\"width: 100%; height: 100%; background-size: cover;\" src=\"" + product.mainImg + "\">\n" +
+                        "                                    </div>\n" +
+                        "                                    <div class=\"itemsBoxText\">\n" +
+                        "                                        <p style=\"width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;\">" + product.name + "</p>\n" +
+                        "                                        <p style=\"width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;\">" + product.code + "</p>\n" +
+                        "                                        <p style=\"width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;\">" + product.price + "</p>\n" +
+                        "                                    </div>\n" +
+                        "                                </div>";
+
+                    $("#row1").append(box);
+
+                    let boxNo = "#" + product.productID;
+
+                    $(boxNo).click(function () {
+                        loadProductManage(product.productID);
+                    })
+
+                }
+            }
+        });
+
+    });
+
+    document.getElementById("headerNameH1").addEventListener("click", function () {
+
+        items.style.display = "flex";
+        product.style.display = "none";
+        category.style.display = "none";
+
+    });
+
+    document.getElementById("manageProductNav").addEventListener("click", function () {
+
+        items.style.display = "none";
+        product.style.display = "flex";
+        category.style.display = "none";
+
+    });
+
+    document.getElementById("manageCategoryNav").addEventListener("click", function () {
+
+        items.style.display = "none";
+        product.style.display = "none";
+        category.style.display = "flex";
+
+    });
+
+    let saveForm = document.getElementById("saveForm");
+    let updateForm = document.getElementById("updateForm");
+    let deleteForm = document.getElementById("deleteForm");
+
+    let saveWrapper = document.getElementById("saveBtnWrapper");
+    let updateWrapper = document.getElementById("updateBtnWrapper");
+    let deleteWrapper = document.getElementById("deleteBtnWrapper");
+
+    saveForm.style.display = "flex";
+    updateForm.style.display = "none";
+    deleteForm.style.display = "none";
+
+    saveWrapper.style.display = "flex";
+    updateWrapper.style.display = "none";
+    deleteWrapper.style.display = "none";
+
+    $("#productSave").click(function () {
+
+        saveForm.style.display = "flex";
+        updateForm.style.display = "none";
+        deleteForm.style.display = "none";
+
+        saveWrapper.style.display = "flex";
+        updateWrapper.style.display = "none";
+        deleteWrapper.style.display = "none";
+
+    });
+
+    $("#productUpdate").click(function () {
+        productUpdateLoad();
+    });
+
+    function productUpdateLoad(){
+        saveForm.style.display = "none";
+        updateForm.style.display = "flex";
+        deleteForm.style.display = "none";
+
+        saveWrapper.style.display = "none";
+        updateWrapper.style.display = "flex";
+        deleteWrapper.style.display = "none";
+    }
+
+    $("#productDelete").click(function () {
+
+        saveForm.style.display = "none";
+        updateForm.style.display = "none";
+        deleteForm.style.display = "flex";
+
+        saveWrapper.style.display = "none";
+        updateWrapper.style.display = "none";
+        deleteWrapper.style.display = "flex";
+
+    });
+
+    let saveCategory = document.getElementById("categorySaveContent");
+    let updateCategory = document.getElementById("categoryUpdateContent");
+    let deleteCategory = document.getElementById("categoryDeleteContent");
+
+    saveCategory.style.display = "flex";
+    updateCategory.style.display = "none";
+    deleteCategory.style.display = "none";
+
+    $("#saveCategoryNav").click(function () {
+
+        saveCategory.style.display = "flex";
+        updateCategory.style.display = "none";
+        deleteCategory.style.display = "none";
+
+    });
+
+    $("#updateCategoryNav").click(function () {
+
+        saveCategory.style.display = "none";
+        updateCategory.style.display = "flex";
+        deleteCategory.style.display = "none";
+
+    });
+
+    $("#deleteCategoryNav").click(function () {
+
+        saveCategory.style.display = "none";
+        updateCategory.style.display = "none";
+        deleteCategory.style.display = "flex";
+
+    });
+
+
+
+    function navigateProducts(id) {
+
+        items.style.display = "flex";
+        product.style.display = "none";
+        category.style.display = "none";
+
+        $(document).ready(function () {
+
+            $.ajax({
+                method: "GET",
+                url: "http://localhost:8080/abc/product",
+                contentType: 'application/json',
+                async: true,
+                data: {
+                    "id": id
+                },
+
+                success: function (data) {
+
+                    $("#row1").empty();
+
+                    for (let i = 0; i <= data.data.length; i++) {
+
+                        let product = data.data[i];
+
+                        let box = "<div class=\"itemsBox\" id=\"" + product.productID + "\">\n" +
+                            "                                    <div class=\"itemsBoxImg\">\n" +
+                            "                                        <img style=\"width: 100%; height: 100%; background-size: cover;\" src=\"" + product.mainImg + "\">\n" +
+                            "                                    </div>\n" +
+                            "                                    <div class=\"itemsBoxText\">\n" +
+                            "                                        <p style=\"width: max-content; height: max-content; color: #8C8C8C; font-size: 16px; margin: 0;\">" + product.name + "</p>\n" +
+                            "                                        <p style=\"width: max-content; height: max-content; color: #8C8C8C; font-size: 12px; margin: 0;\">" + product.code + "</p>\n" +
+                            "                                        <p style=\"width: max-content; height: max-content; color: #07aea4; font-size: 18px; margin: 8px;\">" + product.price + "</p>\n" +
+                            "                                    </div>\n" +
+                            "                                </div>";
+
+                        $("#row1").append(box);
+
+                        let boxNo = "#" + product.productID;
+
+                        $(boxNo).click(function () {
+                            loadProductManage(product.productID);
+                        })
+
+                    }
+                }
+            });
+
+        });
+    }
+
+    function loadProductManage(id) {
+        items.style.display = "none";
+        product.style.display = "flex";
+
+        productUpdateLoad();
+
+        $.ajax({
+            method: "GET",
+            url: "http://localhost:8080/abc/product",
+            contentType: 'application/json',
+            async: true,
+            data: {
+                "productID": id
+            },
+
+            success: function (data) {
+
+                let product = data.data;
+                productGlobal = data.data;
+
+                $("#regProductID").val(product.productID);
+                $("#regProductName").val(product.name);
+                $("#regProductCode").val(product.code);
+                $("#regProductPrice").val(product.price);
+                $("#regProductCategory").val(product.category.categoryName);
+                $("#regProductDesc").val(product.description);
+                $("#regProductSpec").val(product.specs);
+                $("#regProductDimensions").val(product.dimensions);
+                $("#regProductWarranty").val(product.warranty);
+
+                $("#deleteProductID").val(product.productID);
+                $("#deleteProductName").val(product.name);
+                $("#deleteProductCode").val(product.code);
+                $("#deleteProductPrice").val(product.price);
+                $("#deleteProductCategory").val(product.category.categoryName);
+                $("#deleteProductDesc").val(product.description);
+                $("#deleteProductSpec").val(product.specs);
+                $("#deleteProductDimensions").val(product.dimensions);
+                $("#deleteProductWarranty").val(product.warranty);
+
+
+                $("#productImgContainer").empty();
+
+                if (product.mainImg != null) {
+
+                    let mainImg = "<div class=\"col-md-2 d-flex flex-column align-items-center\">\n" +
+                        "                                        <div>\n" +
+                        "                                            <img src=\""+product.mainImg+"\" style=\"width: 125px; height: 100px;\" >\n" +
+                        "                                        </div>\n" +
+                        "                                        <div class=\"form-check mt-2\">\n" +
+                        "                                            <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"mainImgCurrent\">\n" +
+                        "                                            <label class=\"form-check-label\" for=\"mainImgCurrent\">\n" +
+                        "                                                Keep Current Image\n" +
+                        "                                            </label>\n" +
+                        "                                        </div>\n" +
+                        "                                    </div>";
+
+                    $("#productImgContainer").append(mainImg);
+
+                    $("#mainImgCurrent").change(function () {
+                        if (this.checked) {
+                            $("#regProductImgMain").prop("disabled", true);
+                        }else {
+                            $("#regProductImgMain").prop("disabled", false);
+                        }
+                    })
+
+                }
+
+
+
+                if (product.img1 != null) {
+
+                    let img1Img = "<div class=\"col-md-2 d-flex flex-column align-items-center mx-3\">\n" +
+                        "                                        <div>\n" +
+                        "                                            <img src=\""+product.img1+"\" style=\"width: 125px; height: 100px;\" >\n" +
+                        "                                        </div>\n" +
+                        "                                        <div class=\"form-check mt-2\">\n" +
+                        "                                            <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"img1ImgCurrent\">\n" +
+                        "                                            <label class=\"form-check-label\" for=\"img1ImgCurrent\">\n" +
+                        "                                                Keep Current Image\n" +
+                        "                                            </label>\n" +
+                        "                                        </div>\n" +
+                        "                                        <div class=\"form-check mt-2\">\n" +
+                        "                                            <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"img1ImgRemove\">\n" +
+                        "                                            <label class=\"form-check-label\" for=\"img1ImgRemove\">\n" +
+                        "                                                Remove This Image\n" +
+                        "                                            </label>\n" +
+                        "                                        </div>\n" +
+                        "                                    </div>";
+
+                    $("#productImgContainer").append(img1Img);
+
+                    $("#img1ImgCurrent").change(function () {
+                        if (this.checked) {
+                            $("#regProductImg2").prop("disabled", true);
+                            $("#img1ImgRemove").prop("disabled", true);
+                        }else {
+                            $("#regProductImg2").prop("disabled", false);
+                            $("#img1ImgRemove").prop("disabled", false);
+                        }
+                    })
+
+                    $("#img1ImgRemove").change(function () {
+                        if (this.checked) {
+                            $("#img1ImgCurrent").prop("disabled", true);
+                        }else {
+                            $("#img1ImgCurrent").prop("disabled", false);
+                        }
+                    })
+
+                }
+
+                if (product.img2 != null) {
+
+                    let img2Img = "<div class=\"col-md-2 d-flex flex-column align-items-center mx-3\">\n" +
+                        "                                        <div>\n" +
+                        "                                            <img src=\""+product.img2+"\" style=\"width: 125px; height: 100px;\" >\n" +
+                        "                                        </div>\n" +
+                        "                                        <div class=\"form-check mt-2\">\n" +
+                        "                                            <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"img2ImgCurrent\">\n" +
+                        "                                            <label class=\"form-check-label\" for=\"img2ImgCurrent\">\n" +
+                        "                                                Keep Current Image\n" +
+                        "                                            </label>\n" +
+                        "                                        </div>\n" +
+                        "                                        <div class=\"form-check mt-2\">\n" +
+                        "                                            <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"img2ImgRemove\">\n" +
+                        "                                            <label class=\"form-check-label\" for=\"img2ImgRemove\">\n" +
+                        "                                                Remove This Image\n" +
+                        "                                            </label>\n" +
+                        "                                        </div>\n" +
+                        "                                    </div>";
+
+                    $("#productImgContainer").append(img2Img);
+
+                    $("#img2ImgCurrent").change(function () {
+                        if (this.checked) {
+                            $("#regProductImg3").prop("disabled", true);
+                            $("#img2ImgRemove").prop("disabled", true);
+                        }else {
+                            $("#regProductImg3").prop("disabled", false);
+                            $("#img2ImgRemove").prop("disabled", false);
+                        }
+                    })
+
+                    $("#img2ImgRemove").change(function () {
+                        if (this.checked) {
+                            $("#img2ImgCurrent").prop("disabled", true);
+                        }else {
+                            $("#img2ImgCurrent").prop("disabled", false);
+                        }
+                    })
+                }
+
+                if (product.img3 != null) {
+
+                    let img3Img = "<div class=\"col-md-2 d-flex flex-column align-items-center mx-3\">\n" +
+                        "                                        <div>\n" +
+                        "                                            <img src=\""+product.img3+"\" style=\"width: 125px; height: 100px;\" >\n" +
+                        "                                        </div>\n" +
+                        "                                        <div class=\"form-check mt-2\">\n" +
+                        "                                            <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"img3ImgCurrent\">\n" +
+                        "                                            <label class=\"form-check-label\" for=\"img3ImgCurrent\">\n" +
+                        "                                                Keep Current Image\n" +
+                        "                                            </label>\n" +
+                        "                                        </div>\n" +
+                        "                                        <div class=\"form-check mt-2\">\n" +
+                        "                                            <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"img3ImgRemove\">\n" +
+                        "                                            <label class=\"form-check-label\" for=\"img3ImgRemove\">\n" +
+                        "                                                Remove This Image\n" +
+                        "                                            </label>\n" +
+                        "                                        </div>\n" +
+                        "                                    </div>";
+
+                    $("#productImgContainer").append(img3Img);
+
+                    $("#img3ImgCurrent").change(function () {
+                        if (this.checked) {
+                            $("#regProductImg4").prop("disabled", true);
+                            $("#img3ImgRemove").prop("disabled", true);
+                        }else {
+                            $("#regProductImg4").prop("disabled", false);
+                            $("#img3ImgRemove").prop("disabled", false);
+                        }
+                    })
+
+                    $("#img3ImgRemove").change(function () {
+                        if (this.checked) {
+                            $("#img3ImgCurrent").prop("disabled", true);
+                        }else {
+                            $("#img3ImgCurrent").prop("disabled", false);
+                        }
+                    })
+
+                }
+
+
+            }
+        });
+    }
+
+
+</script>
+<script>
+
+    let productGlobal=null;
+
+    $("#btnSaveProduct").click(function () {
+
+        let productID = $("#saveProductID").val();
+        let productName = $("#saveProductName").val();
+        let productCode = $("#saveProductCode").val();
+        let productPrice = $("#saveProductPrice").val();
+        let productDesc = $("#saveProductDesc").val();
+        let productSpecs = $("#saveProductSpec").val();
+        let productDimensions = $("#saveProductDimensions").val();
+        let productWarranty = $("#saveProductWarranty").val();
+        let productCategory = $("#saveProductCategory").val();
+        let adminID = sessionStorage.getItem("adminID");
+
+        let productImgMain = null;
+        let productImg2 = null;
+        let productImg3 = null;
+        let productImg4 = null;
+
+
+        let imgMainFile = $("#saveProductImgMain")[0].files[0];
+        let ogImgMainName = $("#saveProductImgMain")[0].files[0].name;
+        let extImgMain = ogImgMainName.split('.').pop();
+
+        let imgMainName = productID + "_" + productCategory + "_1." + extImgMain;
+
+        let dataImgMain = new FormData();
+        dataImgMain.append("myFile", imgMainFile, imgMainName);
+
+        $.ajax({
+            type: "POST",
+            url: 'http://localhost:8080/abc/product',
+            async: false,
+            processData: false,
+            contentType: false,
+            data: dataImgMain,
+            success: function (data) {
+                productImgMain = data.data;
+            }
+        });
+
+        if (!($('#saveProductImg2').get(0).files.length === 0)) {
+            let img2File = $("#saveProductImg2")[0].files[0];
+            let ogImg2Name = $("#saveProductImg2")[0].files[0].name;
+            let extImg2 = ogImg2Name.split('.').pop();
+
+            let img2Name = productID + "_" + productCategory + "_2." + extImg2;
+
+            let dataImg2 = new FormData();
+            dataImg2.append("myFile", img2File, img2Name);
+
+            $.ajax({
+                type: "POST",
+                url: 'http://localhost:8080/abc/product',
+                async: false,
+                processData: false,
+                contentType: false,
+                data: dataImg2,
+                success: function (data) {
+                    productImg2 = data.data;
+                }
+            });
+        }
+
+        if (!($('#saveProductImg3').get(0).files.length === 0)) {
+            let img3File = $("#saveProductImg3")[0].files[0];
+            let ogImg3Name = $("#saveProductImg3")[0].files[0].name;
+            let extImg3 = ogImg3Name.split('.').pop();
+
+            let img3Name = productID + "_" + productCategory + "_3." + extImg3;
+
+            let dataImg3 = new FormData();
+            dataImg3.append("myFile", img3File, img3Name);
+
+            $.ajax({
+                type: "POST",
+                url: 'http://localhost:8080/abc/product',
+                async: false,
+                processData: false,
+                contentType: false,
+                data: dataImg3,
+                success: function (data) {
+                    productImg3 = data.data;
+                }
+            });
+        }
+
+        if (!($('#saveProductImg4').get(0).files.length === 0)) {
+            let img4File = $("#saveProductImg4")[0].files[0];
+            let ogImg4Name = $("#saveProductImg4")[0].files[0].name;
+            let extImg4 = ogImg4Name.split('.').pop();
+
+            let img4Name = productID + "_" + productCategory + "_4." + extImg4;
+
+            let dataImg4 = new FormData();
+            dataImg4.append("myFile", img4File, img4Name);
+
+            $.ajax({
+                type: "POST",
+                url: 'http://localhost:8080/abc/product',
+                async: false,
+                processData: false,
+                contentType: false,
+                data: dataImg4,
+                success: function (data) {
+                    productImg4 = data.data;
+                }
+            });
+        }
+
+
+        if (productImgMain == null) {
+            alert("Please upload first two photos");
+        } else {
+            $.ajax({
+                method: "POST",
+                url: "http://localhost:8080/abc/product",
+                contentType: 'application/json',
+                async: false,
+                processData: false,
+                data: JSON.stringify({
+                    productID: productID,
+                    name: productName,
+                    code: productCode,
+                    price: productPrice,
+                    description: productDesc,
+                    specs: productSpecs,
+                    dimensions: productDimensions,
+                    warranty: productWarranty,
+                    mainImg: productImgMain,
+                    img1: productImg2,
+                    img2: productImg3,
+                    img3: productImg4,
+                    admin: {
+                        adminID: adminID
+                    },
+                    category: {
+                        categoryID: productCategory
+                    }
+
+                }),
+                success: function (data) {
+                    if (data.message === "Success"){
+                        alert("Successful");
+                    } else {
+                        alert("Unsuccessful");
+                    }
+                }
+            });
+        }
+
+    });
+
+    $("#btnUpdateProduct").click(function () {
+
+        let productID = $("#regProductID").val();
+        let productName = $("#regProductName").val();
+        let productCode = $("#regProductCode").val();
+        let productPrice = $("#regProductPrice").val();
+        let productDesc = $("#regProductDesc").val();
+        let productSpecs = $("#regProductSpec").val();
+        let productDimensions = $("#regProductDimensions").val();
+        let productWarranty = $("#regProductWarranty").val();
+        let productCategory = $("#regProductCategory").val();
+        let adminID = sessionStorage.getItem("adminID");
+
+        let productImgMain = null;
+        let productImg2 = null;
+        let productImg3 = null;
+        let productImg4 = null;
+
+
+        if ($("#mainImgCurrent").is(":checked")) {
+            productImgMain = productGlobal.mainImg;
+        }else {
+            if (!($('#regProductImgMain').get(0).files.length === 0)) {
+                let imgMainFile = $("#regProductImgMain")[0].files[0];
+                let ogImgMainName = $("#regProductImgMain")[0].files[0].name;
+                let extImgMain = ogImgMainName.split('.').pop();
+
+                let imgMainName = productID + "_" + productCategory + "_1." + extImgMain;
+
+                let dataImgMain = new FormData();
+                dataImgMain.append("myFile", imgMainFile, imgMainName);
+
+                $.ajax({
+                    type: "POST",
+                    url: 'http://localhost:8080/abc/product',
+                    async: false,
+                    processData: false,
+                    contentType: false,
+                    data: dataImgMain,
+                    success: function (data) {
+                        productImgMain = data.data;
+                    }
+                });
+            }
+        }
+
+        if (($("#img1ImgCurrent").length) && ($("#img1ImgCurrent").is(":checked"))) {
+            productImg2 = productGlobal.img1;
+        }else {
+            if (($("#img1ImgRemove").length) && ($("#img1ImgRemove").is(":checked"))){
+                productImg2 = null;
+            }
+
+            if (!($('#regProductImg2').get(0).files.length === 0)) {
+                let img2File = $("#regProductImg2")[0].files[0];
+                let ogImg2Name = $("#regProductImg2")[0].files[0].name;
+                let extImg2 = ogImg2Name.split('.').pop();
+
+                let img2Name = productID + "_" + productCategory + "_2." + extImg2;
+
+                let dataImg2 = new FormData();
+                dataImg2.append("myFile", img2File, img2Name);
+
+                $.ajax({
+                    type: "POST",
+                    url: 'http://localhost:8080/abc/product',
+                    async: false,
+                    processData: false,
+                    contentType: false,
+                    data: dataImg2,
+                    success: function (data) {
+                        productImg2 = data.data;
+                    }
+                });
+            }
+            
+        }
+
+
+        if (($("#img2ImgCurrent").length) && ($("#img2ImgCurrent").is(":checked"))) {
+            productImg3 = productGlobal.img2;
+        }else {
+            if (($("#img2ImgRemove").length) && ($("#img2ImgRemove").is(":checked"))){
+                productImg3 = null;
+            }
+
+            if (!($('#regProductImg3').get(0).files.length === 0)) {
+                let img3File = $("#regProductImg3")[0].files[0];
+                let ogImg3Name = $("#regProductImg3")[0].files[0].name;
+                let extImg3 = ogImg3Name.split('.').pop();
+
+                let img3Name = productID + "_" + productCategory + "_3." + extImg3;
+
+                let dataImg3 = new FormData();
+                dataImg3.append("myFile", img3File, img3Name);
+
+                $.ajax({
+                    type: "POST",
+                    url: 'http://localhost:8080/abc/product',
+                    async: false,
+                    processData: false,
+                    contentType: false,
+                    data: dataImg3,
+                    success: function (data) {
+                        productImg3 = data.data;
+                    }
+                });
+            }
+
+        }
+
+
+        if (($("#img3ImgCurrent").length) && ($("#img3ImgCurrent").is(":checked"))) {
+            productImg4 = productGlobal.img3;
+        }else {
+            if (($("#img3ImgRemove").length) && ($("#img3ImgRemove").is(":checked"))) {
+                productImg4 = null;
+            }
+
+            if (!($('#regProductImg4').get(0).files.length === 0)) {
+                let img4File = $("#regProductImg4")[0].files[0];
+                let ogImg4Name = $("#regProductImg4")[0].files[0].name;
+                let extImg4 = ogImg4Name.split('.').pop();
+
+                let img4Name = productID + "_" + productCategory + "_4." + extImg4;
+
+                let dataImg4 = new FormData();
+                dataImg4.append("myFile", img4File, img4Name);
+
+                $.ajax({
+                    type: "POST",
+                    url: 'http://localhost:8080/abc/product',
+                    async: false,
+                    processData: false,
+                    contentType: false,
+                    data: dataImg4,
+                    success: function (data) {
+                        productImg4 = data.data;
+                    }
+                });
+            }
+
+        }
+
+        if (productImgMain == null || productImg2 == null) {
+            alert("Please upload first two photos");
+        } else {
+            $.ajax({
+                method: "POST",
+                url: "http://localhost:8080/abc/product",
+                contentType: 'application/json',
+                async: false,
+                processData: false,
+                data: JSON.stringify({
+                    productID: productID,
+                    name: productName,
+                    code: productCode,
+                    price: productPrice,
+                    description: productDesc,
+                    specs: productSpecs,
+                    dimensions: productDimensions,
+                    warranty: productWarranty,
+                    mainImg: productImgMain,
+                    img1: productImg2,
+                    img2: productImg3,
+                    img3: productImg4,
+                    admin: {
+                        adminID: adminID
+                    },
+                    category: {
+                        categoryID: productCategory
+                    }
+
+                }),
+                success: function (data) {
+                    if (data.message === "Success"){
+                        alert("Successful");
+                    } else {
+                        alert("Unsuccessful");
+                    }
+                }
+            });
+        }
+
+    });
+
+    $("#btnDeleteProduct").click(function () {
+
+        let productID = $("#deleteProductID").val();
+
+        $.ajax({
+            method: "DELETE",
+            url: "http://localhost:8080/abc/product",
+            contentType: 'application/json',
+            async: false,
+            processData: false,
+            data: JSON.stringify({
+                productID: productID,
+            }),
+            success: function (data) {
+                if (data.message === "Success") {
+                    alert("Delete Successful");
+                }else {
+                    alert("Delete Unsuccessful");
+                }
+            }
+        });
+
+    });
+
+
+</script>
+<script>
+
+    $(document).ready(function () {
+
+        loadAllCategories();
+
+    });
+
+    function loadAllCategories(){
+
+        $.ajax({
+            method: "GET",
+            url: "http://localhost:8080/abc/category",
+            contentType: 'application/json',
+            processData: false,
+            async: true,
+
+            success: function (data) {
+
+                $("#saveProductCategory").empty();
+                $("#categoryList").empty();
+                $("#adminProductNav").empty();
+
+                let select = "<option value=\"\" selected disabled>Select Category</option>";
+                $("#saveProductCategory").append(select);
+
+                console.log(data);
+
+                let categories = data.data;
+
+                for (let a=0; a<=categories.length; a++){
+
+                    let category = categories[a];
+                    let id = "#"+category.categoryID;
+
+                    let idName = category.categoryName.split(" ").join("")+"Link";
+                    let idName2 = "#"+idName;
+
+                    let categoryNav = "<a href=\"#\" id=\""+idName+"\" class=\"productDrop\">"+category.categoryName.toUpperCase()+"</a>";
+
+                    $("#adminProductNav").append(categoryNav);
+
+                    $(idName2).click(function () {
+
+                        navigateProducts(category.categoryID);
+
+                    });
+
+                    let categoryBox = "<div class=\"d-flex justify-content-center align-items-center categoryItemHover\" style=\"height: 50px; text-align: center; cursor: pointer; background-color: #EAEFF2; border-radius: 0.5rem;\" id=\""+category.categoryID+"\">\n" +
+                        "                        <p style=\"margin: 1rem; color: #1B2A37;\">"+category.categoryName.toUpperCase()+"</p>\n" +
+                        "                    </div>";
+
+                    $("#categoryList").append(categoryBox);
+
+                    $(id).click(function () {
+
+                        $("#updateCategoryID").val(category.categoryID);
+                        $("#updateCategoryName").val(category.categoryName);
+
+                        $("#deleteCategoryID").val(category.categoryID);
+                        $("#deleteCategoryName").val(category.categoryName);
+
+                    });
+
+                    let selectItem = "<option value=\""+category.categoryID+"\">"+category.categoryName+"</option>";
+
+                    $("#saveProductCategory").append(selectItem);
+
+                }
+
+
+            }
+
+        })
+
+    }
+
+    $("#btnSaveCategory").click(function () {
+
+        let categoryID = $("#saveCategoryID").val();
+        let categoryName = $("#saveCategoryName").val();
+
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:8080/abc/category",
+            contentType: 'application/json',
+            async: false,
+            processData: false,
+            data: JSON.stringify({
+                categoryID: categoryID,
+                categoryName: categoryName,
+            }),
+            success: function (data) {
+                loadAllCategories();
+                if (data.message === "Success"){
+                    alert("Successful");
+                } else {
+                    alert("Unsuccessful");
+                }
+            }
+        });
+
+    });
+
+    $("#btnUpdateCategory").click(function () {
+
+        let categoryID = $("#updateCategoryID").val();
+        let categoryName = $("#updateCategoryName").val();
+
+        $.ajax({
+            method: "PUT",
+            url: "http://localhost:8080/abc/category",
+            contentType: 'application/json',
+            async: false,
+            processData: false,
+            data: JSON.stringify({
+                categoryID: categoryID,
+                categoryName: categoryName,
+            }),
+            success: function (data) {
+                loadAllCategories();
+                if (data.message === "Success"){
+                    alert("Successful");
+                } else {
+                    alert("Unsuccessful");
+                }
+            }
+        });
+
+    });
+
+    $("#btnDeleteCategory").click(function () {
+
+        if (confirm("All products related to this category will be removed")) {
+            let categoryID = $("#deleteCategoryID").val();
+
+            $.ajax({
+                method: "DELETE",
+                url: "http://localhost:8080/abc/category",
+                contentType: 'application/json',
+                async: false,
+                processData: false,
+                data: JSON.stringify({
+                    categoryID: categoryID,
+                }),
+                success: function (data) {
+                    if (data.message === "Success") {
+                        loadAllCategories();
+                        alert("Delete Successful");
+                    } else {
+                        alert("Delete Unsuccessful");
+                    }
+                }
+            });
+        }
+
+    });
+
+</script>
+</body>
+</html>

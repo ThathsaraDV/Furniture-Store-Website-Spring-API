@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=2 minimum-scale=1">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/adminLogin.css">
+
+</head>
+<body style="background-color: #EAEFF2;">
+<section class="container d-flex justify-content-center" style="margin-top: 8%;">
+    <div style="width: 30%; background-color: #F7F8F8; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; border-radius: 1rem;">
+        <div class="row mt-3" id="userLoginRow1">
+            <p class="h1 w-auto" style="float: none; margin: 0 auto; color: #1B2A37;">ABC</p>
+        </div>
+        <div class="row mt-5 pt-3" id="userLoginRow2">
+            <form class="w-75" style="float: none; margin: 0 auto;">
+                <div class="row mb-3 ">
+                    <label for="userLoginName" class="row-sm-2 col-form-label">Username</label>
+                    <div class="row-sm-10">
+                        <input type="text" class="form-control" id="userLoginName">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="userLoginPassword" class="row-sm-2 col-form-label">Password</label>
+                    <div class="row-sm-10">
+                        <input type="password" class="form-control" id="userLoginPassword">
+                        <div class="col-md-12">
+                            <div class="col-md-6" style="float: right; /*margin: 0 auto;*/">
+                                <small class="form-text" style="color: red !important;" id="passwordValid">
+                                    *incorrect password
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 mt-5" style="float: none; margin: 0 auto;">
+                    <button type="button" class="btn btnHover1 w-100"
+                            style="border-radius: 0.5rem; border: 2px #0C0C1E solid;" id="btnSignIn">Sign in
+                    </button>
+                </div>
+
+            </form>
+        </div>
+        <div class="row mt-4 mb-4" id="userLoginRow3">
+            <p class="w-auto" style="float: none; margin: 0 auto;">New to ABC ? <a href="./UserRegistration.html">Register</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<script src="assets/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+
+    $("#passwordValid").hide();
+
+    $("#btnSignIn").click(function () {
+
+        let name = $("#userLoginName").val();
+        let password = $("#userLoginPassword").val();
+
+        $.ajax({
+            method: "GET",
+            url: "http://localhost:8080/abc/admin",
+            async: true,
+            data: {
+                "userName": name
+            },
+            success: function (data) {
+                let customer = data.data;
+                console.log(data);
+                console.log(customer);
+
+                if (!(customer == null)) {
+                    if (password === customer.password){
+
+                        $("#passwordValid").hide();
+                        sessionStorage.setItem("adminID", customer.adminID);
+                        sessionStorage.setItem("adminName", customer.userName);
+                        window.location.replace('./index.html');
+                    } else {
+                        $("#passwordValid").show();
+                        $("#userLoginPassword").focus();
+
+                    }
+
+                } else {
+                    alert("No user by this Username");
+                    $("#userLoginName").focus();
+                }
+
+            }
+        });
+
+        /*window.location.href = '.UserDash.html';*/
+
+    });
+
+    $("#userLoginEmail").keydown(function (e) {
+        /*let reg = new RegExp(/^[a-z]{4,}(@)[a-z]{3,}(.com)$/);
+        let email = $("#userLoginEmail").val();
+        if (!/!*reg.test(email)*!/ email.match(reg)) {
+            $("#emailValid").show();
+        }else {
+            $("#emailValid").hide();
+            if (e.key === "Enter") {
+                $("#userLoginPassword").focus();
+            }
+        }*/
+
+        if (e.key === "Enter") {
+            $("#userLoginPassword").focus();
+        }
+
+    });
+
+</script>
+</body>
+</html>

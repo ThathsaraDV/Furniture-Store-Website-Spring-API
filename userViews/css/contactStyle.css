@@ -1,0 +1,431 @@
+#contactContent{
+    width: 100%;
+    height: 75%;
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F8F8;
+}
+
+#contactContainer{
+    width: 70%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactOuter{
+    width: 100%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#infoContainer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+#infoWrapper1{
+    width: 30%;
+    height: 100%;
+}
+
+#infoWrapper2{
+    width: 65%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#info1{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info1Part1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+#info1ImgDiv{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info1TextDiv{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+#info1Part2{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+#info2{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info2Part1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+#info2ImgDiv{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info2TextDiv{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+#info2Part2{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+#info3{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info3Part1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+#info3ImgDiv{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info3TextDiv{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+#info3Part2{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+#inputMap{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#inputWrapper{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#nameWrapper{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#namePart1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#namePart2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#emailWrapper{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+}
+
+#emailPart1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#emailPart2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#subjectWrapper{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+}
+
+#subjectPart1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#subjectPart2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#messageWrapper{
+    width: 100%;
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+}
+
+#messagePart1{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+}
+
+#messagePart2{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+}
+
+#buttonWrapper{
+    width: 100%;
+    height: 12%;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+}
+
+#mapWrapper{
+    width: 65%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.contactIconText{
+    width: max-content;
+    font-size: 14px;
+}
+
+.contactIconInfo{
+    width: max-content;
+    height: max-content;
+}
+
+#inputSubject{
+    width: 76.5%;
+    height: 65%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 480px){
+
+    #contactContainer {
+        width: 98%;
+        height: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactIconText{
+        width: max-content;
+        font-size: 1.5vw;
+    }
+
+    .contactIconInfo{
+        width: max-content;
+        height: max-content;
+        font-size: 1.5vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #contactContainer {
+        width: 96%;
+        height: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #infoContainer {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+    }
+
+    #infoWrapper1 {
+        width: 0;
+        height: 0;
+    }
+
+    #infoWrapper2 {
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contactIconText {
+        width: max-content;
+        font-size: 3vw;
+    }
+
+    .contactIconInfo {
+        width: max-content;
+        height: max-content;
+        font-size: 3vw;
+    }
+
+    #inputMap {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    #inputWrapper {
+        width: 98%;
+        height: 93%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #nameWrapper {
+        width: 48%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #emailWrapper {
+        width: 52%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+         margin-top: 0;
+    }
+
+    #subjectWrapper {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5%;
+    }
+
+    #inputSubject{
+        width: 88.5%;
+        height: 65%;
+    }
+
+    #messageWrapper {
+        width: 100%;
+        height: 38%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5%;
+    }
+
+    #buttonWrapper {
+        width: 100%;
+        height: 12%;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    #mapWrapper {
+        width: 89%;
+        height: 100%;
+        margin-left: 5%;
+    }
+}

@@ -1,0 +1,6 @@
+.btnHover1:hover{
+    background-color: #1B2A37 !important;
+    color: #F7F8F8 !important;
+    border-radius: 0.5rem !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}

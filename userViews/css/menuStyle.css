@@ -1,0 +1,234 @@
+#headerSm{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    order: 1;
+}
+
+#headerSm1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #1B2E3C;
+}
+
+#headerSmName{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerSmNameDiv{
+    width: 40%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-radius: 50%;*/
+    background-color: #1B2E3C;
+}
+
+#headerSmNameH1{
+    width: max-content;
+    float: none;
+    margin: 0 auto;
+    color: #F9F9F9;
+    font-size: 6vw;
+}
+
+#headerSm2NavContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navSm2Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 8px;
+    height: 34px;
+    width: 92%;
+}
+
+.navSm2Div:hover{
+    /*border: 2px #F7F8F8 solid;*/
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navSm2DivText{
+    font-size: 3vw;
+    color: #F9F9F9;
+}
+
+.container {
+    /*width: 100%;
+    height: 100vh;*/
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 400% 400%;
+    /*position: relative;*/
+}
+
+.nav-bar {
+    position: absolute;
+    background-color: #1B2E3C;
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: position 2.9s;
+    -webkit-transition: position 2.9s;
+    -moz-transition: position 2.9s;
+    -ms-transition: position 2.9s;
+    -o-transition: position 2.9s;
+    z-index: 2;
+}
+
+.toggle {
+    left: 0;
+    box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.toggle-menu {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 13px;
+    right: 11px;
+    width: 34px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2px 2px 2px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-out;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -ms-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+}
+
+.toggle .line1 {
+    background-color: #000000;
+    transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+}
+
+.toggle .line2 {
+    display: none;
+}
+
+.toggle .line3 {
+    background-color: #000000;
+    transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+}
+
+.toggle .toggle-menu {
+    background-color: white;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list-item {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -moz-transition: transform 0.4s ease-in-out;
+    -ms-transition: transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+
+.dropdownSm-contentSm {
+    display: none;
+    position: absolute;
+    background-color: #1B2A37;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 15%;
+}
+
+.dropdownSm-contentSm a {
+    color: #f9f9f9;
+    padding: 12px 16px;
+    font-size: 2vw;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownSm-contentSm a:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /*background-color: #f1f1f1*/
+}
+
+.dropdownSm:hover .dropdownSm-contentSm {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 512px) {
+
+    #headerSm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 10%;
+        order: 1;
+    }
+
+}
